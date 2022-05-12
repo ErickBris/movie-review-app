@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/rating"
+        android:icon="@drawable/rating_icon"
+        android:title="@string/menu_rating"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/coment"
+        android:icon="@drawable/commet_icon"
+        
+        android:title="@string/menu_coment"
+        app:showAsAction="always"/>
+
+</menu>

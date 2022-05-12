@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Movie Review</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Movie Review&rdquo; Documentation by &ldquo;Viavi WebTech-India&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Movie Review&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 28-Sept-2015<br>
+					Company: Viavi WebTech-India<br>
+					Contact: <a href="http://codecanyon.net/user/viaviwebtech?ref=viaviwebtech">CodeCanyon Profile</a>
+
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing the app. If you have any questions that are beyond the scope of this help file, please feel free to message me via my user page contact form <a href="http://codecanyon.net/user/viaviwebtech?ref=viaviwebtech">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ul>
+			<li><a href='#eclipseversion'>Which Eclipse version is needed?</a></li>
+			<li><a href='#importproject'>How to open the project in Eclipse?</a></li>			
+			<li><a href='#packagename'>How to change the package name?</a></li>
+			<li><a href='#appname'>How to change app name?</a></li>
+			<li><a href='#serverconfig'>How to Configure Webservice In Your Server</a></li>	
+			<li><a href='#serverurl'>Where to put Server Url in Application?</a></li>	
+			<li><a href='#howtoadd'>How to add category,actorlist,movie details into webservice?</a></li>			
+			<li><a href='#admob_id'>How to change AdMob publisher id?</a></li>
+			<li><a href='#startapp_id'>How to change StartApp Ad Id/Developer Id?</a></li>			
+			<li><a href='#about'>How to change 'About' section?</a></li>		
+			<li><a href='#splash'>How to change 'Splash Screen and Application Icon & More App Link' ?</a></li>		
+		 	<li><a href="#graphics">Graphics</a></li>			
+			<li><a href="#showcase">App Showcase</a></li>
+			<li><a href="#rating">Rating</a></li>
+<!--
+			<li><a href="#changelog">Changelog</a></li>
+-->
+			<li><a href="#credits">Credits</a></li>
+		</ul>
+		
+		<hr>
+		
+		
+		<h3 id="eclipseversion"><strong>Which Eclipse version is needed?</strong> - <a href="#toc">top</a></h3>
+		<p>
+			Latest Eclipse version is recommended, which can be downloaded from here:<br />
+			<a href='https://eclipse.org/downloads/packages/release/Kepler/SR2'>https://eclipse.org/downloads/packages/release/Kepler/SR2</a>
+		</p> 
+		
+		<hr>
+		
+		
+		<h3 id="importproject"><strong>How to open the project in Eclipse?</strong> - <a href="#toc">top</a></h3>	
+			
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/import_2.png'><img src='assets/images/import_2.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>		
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/import_1.png'><img src='assets/images/import_1.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>	
+		
+		
+			
+		<p>
+			<ol>
+				<li>Open Eclipse > Import > Android > "Existing Android Code into Worksplace" > Next </li>
+				<li>Root Directory > Click Browse button & browse the project folder  > Select all 5 projects 'android-saripaar-master','android-support-v7-appcompat','google-play-services_lib', 'SweetAlert' ,Movie Review'</li>
+				<li>After sucessfully importing the app, Right Click Movie Review' project from Package Explorer > Properties > Java Build Path > Order and Export > Check on 'Android Private Libraries' > OK</li>
+				<li>Then go to 'Project' Menu > Clean.. > Clean All Projects > OK</li>
+				<li>Wait for few minutes until all errors are gone. Ignore any warning appears in 'Problems' tab.</li>
+                <li>Change api level 21</li>
+			</ol>
+		</p> 
+		
+		<hr>
+		
+		
+		<h3 id="packagename"><strong>How to change the package name?</strong> - <a href="#toc">top</a></h3>
+
+		<div style='float:right; padding:0 0 20px 20px; width:400px;'>
+		
+			<div style="float:left; margin:2px 5px;"><a href='assets/images/packagename_1.png'><img src='assets/images/packagename_1.png' alt='' title='Click to view' height='90' style='border:1px solid #aaa'></a></div>
+			<div style="float:left; margin:2px 5px;"><a href='assets/images/packagename_2.png'><img src='assets/images/packagename_2.png' alt='' title='Click to view' height='90' style='border:1px solid #aaa'></a></div>		
+			<div style="float:left; margin:2px 5px;"><a href='assets/images/packagename_3.png'><img src='assets/images/packagename_3.png' alt='' title='Click to view' height='90' style='border:1px solid #aaa'></a></div>
+			<div style="float:left; margin:2px 5px;"><a href='assets/images/packagename_4.png'><img src='assets/images/packagename_4.png' alt='' title='Click to view' height='90' style='border:1px solid #aaa'></a></div>		
+			
+			<div style="float:left; margin:2px 5px;"><a href='assets/images/packagename_5.png'><img src='assets/images/packagename_5.png' alt='' title='Click to view' height='90' style='border:1px solid #aaa'></a></div>	
+		</div>
+		
+		<p>
+			You can change it easily from Eclipse. Here are the steps: 
+			<ol>
+				<li>Right Cilck 'Movie Review' project from Package Explorer > Android Tools > Rename Application Package > Finish.</li>
+				<li>Refactroing dailog present and click Finish</li>
+				<li>Package Name Changed in AndroidMainfest.xml but not in Application Package hierarchy so select Package name Right Click >
+				Go to Refactor > Rename >Enter Package Name > Finish</li>
+			</ol>			
+		</p> 
+		
+		<hr>
+		
+		
+		<h3 id="appname"><strong>How to change app name?</strong> - <a href="#toc">top</a></h3>
+		
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/appname_3.png'><img src='assets/images/appname_3.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>		
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/appname_2.png'><img src='assets/images/appname_2.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>	
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/appname_1.png'><img src='assets/images/appname_1.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>	
+		<p>
+			<ol>
+				<li>Open Eclipse >Movie Review> res > values > strings.xml</li>
+				<li>Select 'strings.xml' tab next to 'Resources' tab</li>
+				<li>Enter your app name inside <b>"app_name"</b> string tag:<br /><code>&lt;string name="app_name"&gt;<b>Movie Review</b>&lt;/string&gt;</code></li>
+				<li>if you want change Project name also then >Right Cilck Movie Review' project from Package Explorer >Refactor > Rename >Enter Application Name > Finish</li>
+			</ol>
+			This will change both title inside the app & app icon name.
+		</p> 
+		
+		<hr>
+		
+		<h3 id="serverconfig"><strong>How to Configure Webservice In Your Server?</strong> - <a href="#toc">top</a></h3>
+		 
+<ol>
+<li>First of all find the Php Code(movie_review_app) folder from the downloaded package.</li>
+<li>Copy these folder and paste it in the htdocs  folder(if you have Wampp installed then put it into www)</li>
+<li>Then create a database and import the database from the db folder.</li>
+<li>Aftre creating database configure the connection file,which is in the includes folder of your package.<br>
+
+ <b>$serverIp="localhost"; <br> 
+	$userName="root";<br>
+	$password="";<br>
+	$dbname="movie_review_app";<br></b>
+	
+That’s all,now run the webservice : <b>http://localhost/movie_review_app/index.php</b>
+
+ 
+</ol>
+
+<span style='color:#000000;'>
+<strong>Login Details</strong>
+</span>
+<span style='color:#000000;'>
+<p><b>Username:</b> admin &nbsp; <b>Password:</b> admin</p>
+			</ol>
+			
+		</p> 
+		
+		
+		<hr>
+
+	<h3 id="serverurl"><strong>Where to put Server Url in Application?</strong> - <a href="#toc">top</a></h3>
+	
+	<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/serverurl_1.png'><img src='assets/images/serverurl_1.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>		
+	
+	<p>
+			<ol>
+				<li>Select Project > go to com.example.util package > Constant.java Class</li>
+				<li> Open Constant.java</li>
+				<li> now if your Sever is http://abc.com so your service url like that <b>http://abc.com/api.php</b> and image path <b>http://abc.com/images</b></li>
+				
+			</ol>
+			</p>
+	
+	<hr>
+	
+		<h3 id="howtoadd"><strong>How to add category,actorlist,movie details into webservice?</strong> - <a href="#toc">top</a></h3>
+		
+		<div style='float:right; padding:0 0 20px 20px; width:400px;'>
+		
+			<div style="float:left; margin:2px 5px;"><a href='assets/images/howtoadd_1.png'><img src='assets/images/howtoadd_1.png' alt='' title='Click to view' height='90' style='border:1px solid #aaa'></a></div>
+			 		
+			
+			 
+		</div>
+			
+		<p>
+		open your admin panel</br>
+		 
+		<ol>
+			
+			<li>Here you can add/update all data</li>
+			 
+		</ol>
+		
+	 
+		</p>
+		<hr>
+	
+		
+		<h3 id="admob_id"><strong>How to change AdMob publisher id?</strong> - <a href="#toc">top</a></h3>
+		
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/admobid.png'><img src='assets/images/admobid.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>		
+		<p>
+			<ol>
+				<li>Open Eclipse > Movie Review > res > values > strings.xml</li>
+				<li>Select 'strings.xml' tab next to 'Resources' tab</li>
+				<li>Enter your AdMob publisher id inside <b>"admob_publisher_id"</b> string tag:<br /><code>&lt;string name="admob_publisher_id"&gt;<b>Your AdMob ID Here</b>&lt;/string&gt;</code></li>
+				
+			</ol>
+		</p> 
+		<hr>
+		
+		
+		
+		<h3 id="startapp_id"><strong>How to change StartApp Ad Id/Developer Id?</strong> - <a href="#toc">top</a></h3>
+		
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/startapp_2.png'><img src='assets/images/startapp_2.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>
+		
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/startapp_1.png'><img src='assets/images/startapp_1.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>	
+		<p>
+			<ol>
+				<li>Open Eclipse > Movie Review > res > values > strings.xml</li>
+				<li>Select 'strings.xml' tab next to 'Resources' tab</li>
+				<li>Enter your StartApp Application id inside <b>"startapp_app_id"</b> string tag:<br /><code>&lt;string name="startapp_app_id"&gt;<b>Your StartApp Application ID</b>&lt;/string&gt;</code></li>
+				<li>Enter your StartApp Developer id inside <b>"startapp_dev_id"</b> string tag:<br /><code>&lt;string name="startapp_dev_id"&gt;<b>Your StartApp Developer ID</b>&lt;/string&gt;</code></li>
+				<li>Open AndroidMainfiest.xml > Change in Startapp Code</li>
+			</ol>
+		</p> 
+		
+		<hr>
+		
+		
+		
+		<h3 id="about"><strong>How to change 'About' section?</strong> - <a href="#toc">top</a></h3>
+		
+		<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/about.png'><img src='assets/images/about.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>		
+		<p>
+			<ol>
+				<li>Go to: Eclipse > Movie Review > assets >index.html</li>
+				<li>Right click index.html > Open With > Text Editor</li>
+				<li>It will open into a text editor inside Eclipse, make your necessary changes & save</li>
+				<li> if you want to put live page to about us then its <a href="https://dl.dropboxusercontent.com/s/fhvcnl5pwoucmv8/Web%20About%20Us.txt">Here</a></li>
+			</ol>
+			 
+		</p> 
+	<hr>
+	
+	<h3 id="splash"><strong>How to change 'Splash Screen and Application Icon & More App Link' ?</strong> - <a href="#toc">top</a></h3>
+	
+	<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/appicon_1.png'><img src='assets/images/appicon_1.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>	
+	<div style='float:right; padding:0 0 20px 20px'><a href='assets/images/appicon.png'><img src='assets/images/appicon.png' alt='' title='Click to view' height='100' style='border:1px solid #aaa'></a></div>	
+	<p>
+		<b>How To Change Application Icon</b>
+		<ol>
+			<li>Open Eclipse > Movie Review > res > drawable-mdpi > app_icon.png</li>
+			<li>Rename your icon with app_icon.png and paste in drawable-mdpi folder</li>
+		</ol>
+		
+		<b>How To Change Splash Screen</b>
+		<ol>
+			<li>Open Eclipse > Movie Review > res > drawable > splash_screen.png</li>
+			<li>Rename your splash screen image  with splash_screen.png and paste in drawable folder</li>
+		</ol>
+		
+		<b>How To Change More App Link</b>
+		<ol>
+		<li>Open Eclipse > Movie Review > res >values > strings.xml</li>
+		<li>Enter your Play Store Apps Link inside <b>"play_more_apps"</b> string tag:<br /><code>&lt;string name="play_more_apps"&gt;<b>Your Application Url</b>&lt;/string&gt;</code></li>
+		</ol>
+		
+	</p>
+	
+	<hr>
+
+		<h3 id="graphics"><strong>Graphics</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You will find all image into /res/drawable-mdpi/,/res/drawable-hdpi/,/res/drawable-xhdpi/ folder. Just create your own graphics and replace those files. Create seperate graphics of different device screen sizes & place them into other drawble folders (drawable-hdpi & drawable-xhdpi) with same file name found at drawable-mdpi folder.  Check here for more information: <a href='http://developer.android.com/design/style/devices-displays.html'>Devices and Displays</a> & <a href='http://developer.android.com/guide/practices/screens_support.html'>Supporting Multiple Screens</a>.</p>
+		
+		<hr>
+		
+		
+		
+		<h3 id="showcase"><strong>App Showcase</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Once you will publish your app to Google Play or any other Android store, send us your app link. We will happy to showcase your app into our website & CodeCanyon page.</p> 
+		
+		<hr>
+		
+		
+		
+		<h3 id="rating"><strong>Rating</strong> - <a href="#toc">top</a></h3>
+		
+		<p>If you like our app, we will highly appreciate if you can provide us a rating of 5. You can rate us from your CodeCanyon Menu > Download page.</p> 
+		
+		<hr>
+		
+		
+		<h3 id="credits"><strong>Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used folowing sources into this app:
+		
+		<ul>
+			
+			<li><a href='http://actionbarsherlock.com/'>ActionBarSherlock</a></li>
+			<li>Cropper</li>
+			<li>Universal ImageLoader.jar</li>			
+		</ul>
+		
+		<hr>
+		
+		
+		
+		<p>Once again, thank you so much for purchasing this app. As I said at the beginning, I'd be glad to help you if you have any questions relating to this app. No guarantees, but I'll do my best to assist. If you have a more general question relating to the apps on CodeCanyon, you might consider visiting the "FAQ / Support" section and asking your question in the "Comments" section at CodeCanyon app detail page.</p> 
+		
+		<p class="append-bottom alt large"><strong>Vishal Parmar</strong><br /><strong><a href='http://www.viaviweb.in'>Viavi WebTech-India</a></strong></p>
+
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

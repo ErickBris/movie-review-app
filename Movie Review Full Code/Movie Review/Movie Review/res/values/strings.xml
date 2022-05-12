@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie Review</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="img_no">No Favorite Found</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_rating">Rating</string>
+    <string name="menu_coment">Comment</string>
+
+    <!-- connection -->
+    <string name="conn_msg1">Internal server error</string>
+    <string name="conn_msg2">Switch on your internet</string>
+    <string name="conn_msg3">No Network Connection!!!</string>
+    <string name="conn_msg4">Internet Connection Error</string>
+    <string name="loading">Loading..</string>
+    <string name="nodata">No data found from web!!!</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="text_no_item">No item available.</string>
+
+    <!-- Authentication Activity Message -->
+    <string name="autho_signin">Sign In</string>
+    <string name="autho_signup">Sign Up</string>
+    <string name="autho_email">Email</string>
+    <string name="autho_password">Password</string>
+    <string name="autho_fullname">Full Name</string>
+    <string name="autho_remember">Remember Me</string>
+    <string name="coment_hint">Add your comment here</string>
+
+    <!-- play store application link i.e more apps -->
+    <string name="play_more_apps">https://play.google.com/store/apps/developer?id=Vishal+M+Parmar</string>
+
+    <!-- admob id -->
+    <string name="admob_publisher_id">ca-app-pub-8356404931736973/8472687999</string> <!-- your admob id -->
+
+     <!-- startapp id -->
+    <string name="startapp_app_id">208375997</string>
+    <string name="startapp_dev_id">101068545</string>
+
+</resources>
